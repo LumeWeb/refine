@@ -1,6 +1,6 @@
 import qs, { IStringifyOptions } from "qs";
-import unionWith from "lodash/unionWith";
-import differenceWith from "lodash/differenceWith";
+import unionWith from "lodash/unionWith.js";
+import differenceWith from "lodash/differenceWith.js";
 import warnOnce from "warn-once";
 
 import {

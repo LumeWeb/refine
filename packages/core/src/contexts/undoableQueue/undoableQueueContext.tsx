@@ -1,5 +1,5 @@
 import React, { ReactNode, useReducer } from "react";
-import isEqual from "lodash/isEqual";
+import isEqual from "lodash/isEqual.js";
 
 import { UndoableQueue } from "@components";
 

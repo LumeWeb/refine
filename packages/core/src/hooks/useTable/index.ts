@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { QueryObserverResult, UseQueryOptions } from "@tanstack/react-query";
 import qs from "qs";
-import differenceWith from "lodash/differenceWith";
-import isEqual from "lodash/isEqual";
+import differenceWith from "lodash/differenceWith.js";
+import isEqual from "lodash/isEqual.js";
 import warnOnce from "warn-once";
 
 import {

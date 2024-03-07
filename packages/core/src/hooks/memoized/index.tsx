@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import isEqual from "lodash/isEqual";
+import isEqual from "lodash/isEqual.js";
 
 /**
  * Hook that memoizes the given value with deep equality.

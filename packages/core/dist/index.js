@@ -158,8 +158,8 @@ var import_devtools_internal = require("@refinedev/devtools-internal");
 
 // src/definitions/table/index.ts
 var import_qs = __toESM(require("qs"));
-var import_unionWith = __toESM(require("lodash/unionWith"));
-var import_differenceWith = __toESM(require("lodash/differenceWith"));
+var import_unionWith = __toESM(require("lodash/unionWith.js"));
+var import_differenceWith = __toESM(require("lodash/differenceWith.js"));
 var import_warn_once = __toESM(require("warn-once"));
 
 // src/definitions/helpers/userFriendlySeconds/index.ts
@@ -168,8 +168,8 @@ var userFriendlySecond = /* @__PURE__ */ __name((miliseconds) => {
 }, "userFriendlySecond");
 
 // src/definitions/helpers/importCSVMapper/index.ts
-var import_zip = __toESM(require("lodash/zip"));
-var import_fromPairs = __toESM(require("lodash/fromPairs"));
+var import_zip = __toESM(require("lodash/zip.js"));
+var import_fromPairs = __toESM(require("lodash/fromPairs.js"));
 var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) => {
   const [headers, ...body] = data;
   return body.map((entry) => (0, import_fromPairs.default)((0, import_zip.default)(headers, entry))).map(
@@ -2790,7 +2790,7 @@ var import_react_query14 = require("@tanstack/react-query");
 
 // src/contexts/undoableQueue/undoableQueueContext.tsx
 var import_react14 = __toESM(require("react"));
-var import_isEqual = __toESM(require("lodash/isEqual"));
+var import_isEqual = __toESM(require("lodash/isEqual.js"));
 var UndoableQueueContext = import_react14.default.createContext({
   notifications: [],
   notificationDispatch: () => false
@@ -4920,7 +4920,7 @@ var import_react19 = require("react");
 
 // src/hooks/memoized/index.tsx
 var import_react18 = require("react");
-var import_isEqual2 = __toESM(require("lodash/isEqual"));
+var import_isEqual2 = __toESM(require("lodash/isEqual.js"));
 var useMemoized = /* @__PURE__ */ __name((value) => {
   const ref = (0, import_react18.useRef)(value);
   if (!(0, import_isEqual2.default)(ref.current, value)) {
@@ -5496,7 +5496,7 @@ ${csv}`;
 // src/hooks/form/useForm.ts
 var import_react41 = __toESM(require("react"));
 var import_warn_once3 = __toESM(require("warn-once"));
-var import_debounce = __toESM(require("lodash/debounce"));
+var import_debounce = __toESM(require("lodash/debounce.js"));
 var useForm = /* @__PURE__ */ __name(({
   resource: resourceFromProps,
   action: actionFromProps,
@@ -6260,7 +6260,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 // src/hooks/import/index.tsx
 var import_react47 = require("react");
 var import_papaparse2 = require("papaparse");
-var import_chunk = __toESM(require("lodash/chunk"));
+var import_chunk = __toESM(require("lodash/chunk.js"));
 var useImport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,
@@ -6643,9 +6643,9 @@ var useCanWithoutCache = /* @__PURE__ */ __name(() => {
 
 // src/hooks/useSelect/index.ts
 var import_react55 = require("react");
-var import_uniqBy = __toESM(require("lodash/uniqBy"));
-var import_debounce2 = __toESM(require("lodash/debounce"));
-var import_get = __toESM(require("lodash/get"));
+var import_uniqBy = __toESM(require("lodash/uniqBy.js"));
+var import_debounce2 = __toESM(require("lodash/debounce.js"));
+var import_get = __toESM(require("lodash/get.js"));
 var useSelect = /* @__PURE__ */ __name((props) => {
   const [search, setSearch] = (0, import_react55.useState)([]);
   const [options, setOptions] = (0, import_react55.useState)([]);
@@ -6812,8 +6812,8 @@ var useSelect = /* @__PURE__ */ __name((props) => {
 // src/hooks/useTable/index.ts
 var import_react56 = __toESM(require("react"));
 var import_qs4 = __toESM(require("qs"));
-var import_differenceWith2 = __toESM(require("lodash/differenceWith"));
-var import_isEqual3 = __toESM(require("lodash/isEqual"));
+var import_differenceWith2 = __toESM(require("lodash/differenceWith.js"));
+var import_isEqual3 = __toESM(require("lodash/isEqual.js"));
 var import_warn_once5 = __toESM(require("warn-once"));
 var defaultPermanentFilter = [];
 var defaultPermanentSorter = [];

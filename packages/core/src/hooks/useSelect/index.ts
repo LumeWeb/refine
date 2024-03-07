@@ -1,8 +1,8 @@
 import { useCallback, useMemo, useState } from "react";
 import { QueryObserverResult, UseQueryOptions } from "@tanstack/react-query";
-import uniqBy from "lodash/uniqBy";
-import debounce from "lodash/debounce";
-import get from "lodash/get";
+import uniqBy from "lodash/uniqBy.js";
+import debounce from "lodash/debounce.js";
+import get from "lodash/get.js";
 
 import { useList, useMany, useMeta } from "@hooks";
 import {

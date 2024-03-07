@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { parse, ParseConfig } from "papaparse";
-import chunk from "lodash/chunk";
+import chunk from "lodash/chunk.js";
 
 import { useCreate, useCreateMany, useMeta, useResource } from "@hooks";
 import { MapDataFn, BaseRecord, HttpError, MetaQuery } from "../../interfaces";

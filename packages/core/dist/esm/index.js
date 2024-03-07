@@ -13,8 +13,8 @@ import { getXRay } from "@refinedev/devtools-internal";
 
 // src/definitions/table/index.ts
 import qs from "qs";
-import unionWith from "lodash-es/unionWith";
-import differenceWith from "lodash-es/differenceWith";
+import unionWith from "lodash-es/unionWith.js";
+import differenceWith from "lodash-es/differenceWith.js";
 import warnOnce from "warn-once";
 
 // src/definitions/helpers/userFriendlySeconds/index.ts
@@ -23,8 +23,8 @@ var userFriendlySecond = /* @__PURE__ */ __name((miliseconds) => {
 }, "userFriendlySecond");
 
 // src/definitions/helpers/importCSVMapper/index.ts
-import zip from "lodash-es/zip";
-import fromPairs from "lodash-es/fromPairs";
+import zip from "lodash-es/zip.js";
+import fromPairs from "lodash-es/fromPairs.js";
 var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) => {
   const [headers, ...body] = data;
   return body.map((entry) => fromPairs(zip(headers, entry))).map(
@@ -2666,7 +2666,7 @@ import {
 
 // src/contexts/undoableQueue/undoableQueueContext.tsx
 import React7, { useReducer } from "react";
-import isEqual from "lodash-es/isEqual";
+import isEqual from "lodash-es/isEqual.js";
 var UndoableQueueContext = React7.createContext({
   notifications: [],
   notificationDispatch: () => false
@@ -4817,7 +4817,7 @@ import { useMemo } from "react";
 
 // src/hooks/memoized/index.tsx
 import { useRef } from "react";
-import isEqual2 from "lodash-es/isEqual";
+import isEqual2 from "lodash-es/isEqual.js";
 var useMemoized = /* @__PURE__ */ __name((value) => {
   const ref = useRef(value);
   if (!isEqual2(ref.current, value)) {
@@ -5393,7 +5393,7 @@ ${csv}`;
 // src/hooks/form/useForm.ts
 import React18 from "react";
 import warnOnce3 from "warn-once";
-import debounce from "lodash-es/debounce";
+import debounce from "lodash-es/debounce.js";
 var useForm = /* @__PURE__ */ __name(({
   resource: resourceFromProps,
   action: actionFromProps,
@@ -6157,7 +6157,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 // src/hooks/import/index.tsx
 import { useEffect as useEffect5, useState as useState6 } from "react";
 import { parse } from "papaparse";
-import chunk from "lodash-es/chunk";
+import chunk from "lodash-es/chunk.js";
 var useImport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,
@@ -6542,9 +6542,9 @@ var useCanWithoutCache = /* @__PURE__ */ __name(() => {
 
 // src/hooks/useSelect/index.ts
 import { useCallback as useCallback10, useMemo as useMemo3, useState as useState8 } from "react";
-import uniqBy from "lodash-es/uniqBy";
-import debounce2 from "lodash-es/debounce";
-import get from "lodash-es/get";
+import uniqBy from "lodash-es/uniqBy.js";
+import debounce2 from "lodash-es/debounce.js";
+import get from "lodash-es/get.js";
 var useSelect = /* @__PURE__ */ __name((props) => {
   const [search, setSearch] = useState8([]);
   const [options, setOptions] = useState8([]);
@@ -6711,8 +6711,8 @@ var useSelect = /* @__PURE__ */ __name((props) => {
 // src/hooks/useTable/index.ts
 import React27, { useState as useState9, useEffect as useEffect6 } from "react";
 import qs4 from "qs";
-import differenceWith2 from "lodash-es/differenceWith";
-import isEqual3 from "lodash-es/isEqual";
+import differenceWith2 from "lodash-es/differenceWith.js";
+import isEqual3 from "lodash-es/isEqual.js";
 import warnOnce5 from "warn-once";
 var defaultPermanentFilter = [];
 var defaultPermanentSorter = [];

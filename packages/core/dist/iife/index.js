@@ -40,8 +40,8 @@
 
   // src/definitions/table/index.ts
   var import_qs = __toESM(__require("qs"));
-  var import_unionWith = __toESM(__require("lodash-es/unionWith"));
-  var import_differenceWith = __toESM(__require("lodash-es/differenceWith"));
+  var import_unionWith = __toESM(__require("lodash-es/unionWith.js"));
+  var import_differenceWith = __toESM(__require("lodash-es/differenceWith.js"));
   var import_warn_once = __toESM(__require("warn-once"));
 
   // src/definitions/helpers/userFriendlySeconds/index.ts
@@ -50,8 +50,8 @@
   }, "userFriendlySecond");
 
   // src/definitions/helpers/importCSVMapper/index.ts
-  var import_zip = __toESM(__require("lodash-es/zip"));
-  var import_fromPairs = __toESM(__require("lodash-es/fromPairs"));
+  var import_zip = __toESM(__require("lodash-es/zip.js"));
+  var import_fromPairs = __toESM(__require("lodash-es/fromPairs.js"));
   var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) => {
     const [headers, ...body] = data;
     return body.map((entry) => (0, import_fromPairs.default)((0, import_zip.default)(headers, entry))).map(
@@ -2672,7 +2672,7 @@
 
   // src/contexts/undoableQueue/undoableQueueContext.tsx
   var import_react14 = __toESM(__require("react"));
-  var import_isEqual = __toESM(__require("lodash-es/isEqual"));
+  var import_isEqual = __toESM(__require("lodash-es/isEqual.js"));
   var UndoableQueueContext = import_react14.default.createContext({
     notifications: [],
     notificationDispatch: () => false
@@ -4802,7 +4802,7 @@
 
   // src/hooks/memoized/index.tsx
   var import_react18 = __require("react");
-  var import_isEqual2 = __toESM(__require("lodash-es/isEqual"));
+  var import_isEqual2 = __toESM(__require("lodash-es/isEqual.js"));
   var useMemoized = /* @__PURE__ */ __name((value) => {
     const ref = (0, import_react18.useRef)(value);
     if (!(0, import_isEqual2.default)(ref.current, value)) {
@@ -5378,7 +5378,7 @@ ${csv}`;
   // src/hooks/form/useForm.ts
   var import_react41 = __toESM(__require("react"));
   var import_warn_once3 = __toESM(__require("warn-once"));
-  var import_debounce = __toESM(__require("lodash-es/debounce"));
+  var import_debounce = __toESM(__require("lodash-es/debounce.js"));
   var useForm = /* @__PURE__ */ __name(({
     resource: resourceFromProps,
     action: actionFromProps,
@@ -6142,7 +6142,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   // src/hooks/import/index.tsx
   var import_react47 = __require("react");
   var import_papaparse2 = __require("papaparse");
-  var import_chunk = __toESM(__require("lodash-es/chunk"));
+  var import_chunk = __toESM(__require("lodash-es/chunk.js"));
   var useImport = /* @__PURE__ */ __name(({
     resourceName,
     resource: resourceFromProps,
@@ -6525,9 +6525,9 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
   // src/hooks/useSelect/index.ts
   var import_react55 = __require("react");
-  var import_uniqBy = __toESM(__require("lodash-es/uniqBy"));
-  var import_debounce2 = __toESM(__require("lodash-es/debounce"));
-  var import_get = __toESM(__require("lodash-es/get"));
+  var import_uniqBy = __toESM(__require("lodash-es/uniqBy.js"));
+  var import_debounce2 = __toESM(__require("lodash-es/debounce.js"));
+  var import_get = __toESM(__require("lodash-es/get.js"));
   var useSelect = /* @__PURE__ */ __name((props) => {
     const [search, setSearch] = (0, import_react55.useState)([]);
     const [options, setOptions] = (0, import_react55.useState)([]);
@@ -6694,8 +6694,8 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   // src/hooks/useTable/index.ts
   var import_react56 = __toESM(__require("react"));
   var import_qs4 = __toESM(__require("qs"));
-  var import_differenceWith2 = __toESM(__require("lodash-es/differenceWith"));
-  var import_isEqual3 = __toESM(__require("lodash-es/isEqual"));
+  var import_differenceWith2 = __toESM(__require("lodash-es/differenceWith.js"));
+  var import_isEqual3 = __toESM(__require("lodash-es/isEqual.js"));
   var import_warn_once5 = __toESM(__require("warn-once"));
   var defaultPermanentFilter = [];
   var defaultPermanentSorter = [];

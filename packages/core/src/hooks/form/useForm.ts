@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction } from "react";
 import { QueryObserverResult, UseQueryOptions } from "@tanstack/react-query";
 import warnOnce from "warn-once";
-import debounce from "lodash/debounce";
+import debounce from "lodash/debounce.js";
 
 import {
   useWarnAboutChange,
