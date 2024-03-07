@@ -24,6 +24,7 @@ export default defineConfig({
     options.banner = {
       js: '"use client"',
     };
+    options.minify = false;
   },
   onSuccess: "tsc --project tsconfig.declarations.json",
 });
