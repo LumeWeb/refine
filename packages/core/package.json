@@ -1,7 +1,6 @@
 {
   "name": "@refinedev/core",
   "version": "4.48.0",
-  "type": "module",
   "private": false,
   "description": "refine is a React-based framework for building internal tools, rapidly. It ships with Ant Design System, an enterprise-level UI toolkit.",
   "repository": {
@@ -12,7 +11,8 @@
   "license": "MIT",
   "author": "refine",
   "sideEffects": false,
-  "main": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsup --format esm,cjs,iife --minify --legacy-output",
