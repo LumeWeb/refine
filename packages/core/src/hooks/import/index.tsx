@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { parse, ParseConfig } from "papaparse";
+import papaparsePkg from 'papaparse';
+const { parse } = papaparsePkg;
+import type { ParseConfig } from "papaparse";
 import chunk from "lodash/chunk.js";
 
 import { useCreate, useCreateMany, useMeta, useResource } from "@hooks";

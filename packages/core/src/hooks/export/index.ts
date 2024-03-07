@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { unparse, UnparseConfig } from "papaparse";
+import papaparsePkg from 'papaparse';
+const { unparse } = papaparsePkg;
+import type { UnparseConfig } from "papaparse";
 import warnOnce from "warn-once";
 import { useResource, useDataProvider, useMeta } from "@hooks";
 import {
