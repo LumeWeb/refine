@@ -5247,8 +5247,9 @@ var useGetLocale = /* @__PURE__ */ __name(() => {
 
 // src/hooks/export/index.ts
 import { useState as useState4 } from "react";
-import { unparse } from "papaparse";
+import papaparsePkg from "papaparse";
 import warnOnce2 from "warn-once";
+var { unparse } = papaparsePkg;
 var useExport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,
@@ -6156,8 +6157,9 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
 // src/hooks/import/index.tsx
 import { useEffect as useEffect5, useState as useState6 } from "react";
-import { parse } from "papaparse";
+import papaparsePkg2 from "papaparse";
 import chunk from "lodash-es/chunk.js";
+var { parse } = papaparsePkg2;
 var useImport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,

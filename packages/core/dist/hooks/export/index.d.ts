@@ -1,4 +1,4 @@
-import { UnparseConfig } from "papaparse";
+import type { UnparseConfig } from "papaparse";
 import { BaseRecord, MapDataFn, CrudSorting, CrudFilters, MetaQuery } from "../../interfaces";
 export interface ExportOptions {
     filename?: string;

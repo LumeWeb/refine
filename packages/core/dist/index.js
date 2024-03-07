@@ -150,17 +150,17 @@ __export(src_exports, {
 module.exports = __toCommonJS(src_exports);
 
 // src/components/pages/error/index.tsx
-var import_react62 = __toESM(require("react"));
+var import_react62 = __toESM(require("react"), 1);
 
 // src/hooks/auth/usePermissions/index.ts
 var import_react_query = require("@tanstack/react-query");
 var import_devtools_internal = require("@refinedev/devtools-internal");
 
 // src/definitions/table/index.ts
-var import_qs = __toESM(require("qs"));
-var import_unionWith = __toESM(require("lodash/unionWith.js"));
-var import_differenceWith = __toESM(require("lodash/differenceWith.js"));
-var import_warn_once = __toESM(require("warn-once"));
+var import_qs = __toESM(require("qs"), 1);
+var import_unionWith = __toESM(require("lodash/unionWith.js"), 1);
+var import_differenceWith = __toESM(require("lodash/differenceWith.js"), 1);
+var import_warn_once = __toESM(require("warn-once"), 1);
 
 // src/definitions/helpers/userFriendlySeconds/index.ts
 var userFriendlySecond = /* @__PURE__ */ __name((miliseconds) => {
@@ -168,8 +168,8 @@ var userFriendlySecond = /* @__PURE__ */ __name((miliseconds) => {
 }, "userFriendlySecond");
 
 // src/definitions/helpers/importCSVMapper/index.ts
-var import_zip = __toESM(require("lodash/zip.js"));
-var import_fromPairs = __toESM(require("lodash/fromPairs.js"));
+var import_zip = __toESM(require("lodash/zip.js"), 1);
+var import_fromPairs = __toESM(require("lodash/fromPairs.js"), 1);
 var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) => {
   const [headers, ...body] = data;
   return body.map((entry) => (0, import_fromPairs.default)((0, import_zip.default)(headers, entry))).map(
@@ -178,7 +178,7 @@ var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) =>
 }, "importCSVMapper");
 
 // src/definitions/helpers/userFriendlyResourceName/index.ts
-var import_pluralize = __toESM(require("pluralize"));
+var import_pluralize = __toESM(require("pluralize"), 1);
 var userFriendlyResourceName = /* @__PURE__ */ __name((resource = "", type) => {
   const humanizeResource = humanizeString(resource);
   if (type === "singular") {
@@ -697,11 +697,11 @@ var humanizeString = /* @__PURE__ */ __name((text2) => {
 }, "humanizeString");
 
 // src/contexts/refine/index.tsx
-var import_react2 = __toESM(require("react"));
-var import_pluralize2 = __toESM(require("pluralize"));
+var import_react2 = __toESM(require("react"), 1);
+var import_pluralize2 = __toESM(require("pluralize"), 1);
 
 // src/components/layoutWrapper/defaultLayout/index.tsx
-var import_react = __toESM(require("react"));
+var import_react = __toESM(require("react"), 1);
 var DefaultLayout = /* @__PURE__ */ __name(({ children }) => {
   return /* @__PURE__ */ import_react.default.createElement("div", null, children);
 }, "DefaultLayout");
@@ -997,7 +997,7 @@ var composeRoute = /* @__PURE__ */ __name((designatedRoute, resourceMeta = {}, p
 }, "composeRoute");
 
 // src/contexts/auth/index.tsx
-var import_react3 = __toESM(require("react"));
+var import_react3 = __toESM(require("react"), 1);
 var LegacyAuthContext = import_react3.default.createContext({});
 var LegacyAuthContextProvider = /* @__PURE__ */ __name(({ children, isProvided, ...authOperations }) => {
   const { replace } = useNavigation();
@@ -1269,7 +1269,7 @@ var useMutationMode = /* @__PURE__ */ __name(() => {
 var import_react7 = require("react");
 
 // src/contexts/unsavedWarn/index.tsx
-var import_react6 = __toESM(require("react"));
+var import_react6 = __toESM(require("react"), 1);
 var UnsavedWarnContext = import_react6.default.createContext({});
 var UnsavedWarnContextProvider = /* @__PURE__ */ __name(({
   children
@@ -1747,10 +1747,10 @@ var buildSuccessNotification = /* @__PURE__ */ __name((successNotification) => {
 }, "buildSuccessNotification");
 
 // src/hooks/auth/useLogin/index.ts
-var import_react11 = __toESM(require("react"));
+var import_react11 = __toESM(require("react"), 1);
 var import_react_query5 = require("@tanstack/react-query");
 var import_devtools_internal4 = require("@refinedev/devtools-internal");
-var import_qs2 = __toESM(require("qs"));
+var import_qs2 = __toESM(require("qs"), 1);
 function useLogin({
   v3LegacyAuthProviderCompatible,
   mutationOptions
@@ -2072,10 +2072,10 @@ var buildSuccessNotification4 = /* @__PURE__ */ __name((successNotification) => 
 }, "buildSuccessNotification");
 
 // src/hooks/auth/useUpdatePassword/index.ts
-var import_react12 = __toESM(require("react"));
+var import_react12 = __toESM(require("react"), 1);
 var import_react_query8 = require("@tanstack/react-query");
 var import_devtools_internal7 = require("@refinedev/devtools-internal");
-var import_qs3 = __toESM(require("qs"));
+var import_qs3 = __toESM(require("qs"), 1);
 function useUpdatePassword({
   v3LegacyAuthProviderCompatible,
   mutationOptions
@@ -2789,8 +2789,8 @@ var import_devtools_internal13 = require("@refinedev/devtools-internal");
 var import_react_query14 = require("@tanstack/react-query");
 
 // src/contexts/undoableQueue/undoableQueueContext.tsx
-var import_react14 = __toESM(require("react"));
-var import_isEqual = __toESM(require("lodash/isEqual.js"));
+var import_react14 = __toESM(require("react"), 1);
+var import_isEqual = __toESM(require("lodash/isEqual.js"), 1);
 var UndoableQueueContext = import_react14.default.createContext({
   notifications: [],
   notificationDispatch: () => false
@@ -4676,7 +4676,7 @@ var useCustomMutation = /* @__PURE__ */ __name(({
 var import_react16 = require("react");
 
 // src/contexts/data/index.tsx
-var import_react15 = __toESM(require("react"));
+var import_react15 = __toESM(require("react"), 1);
 var defaultDataProvider = /* @__PURE__ */ __name(() => {
   return {};
 }, "defaultDataProvider");
@@ -4896,7 +4896,7 @@ var useInfiniteList = /* @__PURE__ */ __name(({
 }, "useInfiniteList");
 
 // src/contexts/live/index.tsx
-var import_react17 = __toESM(require("react"));
+var import_react17 = __toESM(require("react"), 1);
 var LiveContext = import_react17.default.createContext(void 0);
 var LiveContextProvider = /* @__PURE__ */ __name(({
   liveProvider,
@@ -4913,14 +4913,14 @@ var import_react_query23 = require("@tanstack/react-query");
 var import_react25 = require("react");
 
 // src/contexts/resource/index.tsx
-var import_react20 = __toESM(require("react"));
+var import_react20 = __toESM(require("react"), 1);
 
 // src/hooks/deepMemo/index.tsx
 var import_react19 = require("react");
 
 // src/hooks/memoized/index.tsx
 var import_react18 = require("react");
-var import_isEqual2 = __toESM(require("lodash/isEqual.js"));
+var import_isEqual2 = __toESM(require("lodash/isEqual.js"), 1);
 var useMemoized = /* @__PURE__ */ __name((value) => {
   const ref = (0, import_react18.useRef)(value);
   if (!(0, import_isEqual2.default)(ref.current, value)) {
@@ -4948,7 +4948,7 @@ var ResourceContextProvider = /* @__PURE__ */ __name(({ resources: providedResou
 }, "ResourceContextProvider");
 
 // src/contexts/router-picker/index.tsx
-var import_react21 = __toESM(require("react"));
+var import_react21 = __toESM(require("react"), 1);
 var RouterPickerContext = import_react21.default.createContext("new");
 var RouterPickerProvider = RouterPickerContext.Provider;
 var useRouterType = /* @__PURE__ */ __name(() => {
@@ -4957,10 +4957,10 @@ var useRouterType = /* @__PURE__ */ __name(() => {
 }, "useRouterType");
 
 // src/hooks/router/use-parsed/index.tsx
-var import_react24 = __toESM(require("react"));
+var import_react24 = __toESM(require("react"), 1);
 
 // src/contexts/router/index.tsx
-var import_react22 = __toESM(require("react"));
+var import_react22 = __toESM(require("react"), 1);
 var defaultBindings = {};
 var RouterBindingsContext = (0, import_react22.createContext)(defaultBindings);
 var RouterBindingsProvider = /* @__PURE__ */ __name(({ children, router }) => {
@@ -4968,7 +4968,7 @@ var RouterBindingsProvider = /* @__PURE__ */ __name(({ children, router }) => {
 }, "RouterBindingsProvider");
 
 // src/hooks/router/use-parse/index.tsx
-var import_react23 = __toESM(require("react"));
+var import_react23 = __toESM(require("react"), 1);
 var useParse = /* @__PURE__ */ __name(() => {
   const bindings = (0, import_react23.useContext)(RouterBindingsContext);
   const useParse2 = import_react23.default.useMemo(
@@ -5272,7 +5272,7 @@ var useCancelNotification = /* @__PURE__ */ __name(() => {
 var import_react34 = require("react");
 
 // src/contexts/notification/index.tsx
-var import_react33 = __toESM(require("react"));
+var import_react33 = __toESM(require("react"), 1);
 var NotificationContext = (0, import_react33.createContext)({});
 var NotificationContextProvider = /* @__PURE__ */ __name(({ open, close, children }) => {
   return /* @__PURE__ */ import_react33.default.createElement(NotificationContext.Provider, { value: { open, close } }, children);
@@ -5307,7 +5307,7 @@ var useHandleNotification = /* @__PURE__ */ __name(() => {
 var import_react37 = require("react");
 
 // src/contexts/translation/index.tsx
-var import_react36 = __toESM(require("react"));
+var import_react36 = __toESM(require("react"), 1);
 var TranslationContext = import_react36.default.createContext({});
 var TranslationContextProvider = /* @__PURE__ */ __name(({ children, i18nProvider }) => {
   return /* @__PURE__ */ import_react36.default.createElement(
@@ -5350,8 +5350,9 @@ var useGetLocale = /* @__PURE__ */ __name(() => {
 
 // src/hooks/export/index.ts
 var import_react40 = require("react");
-var import_papaparse = require("papaparse");
-var import_warn_once2 = __toESM(require("warn-once"));
+var import_papaparse = __toESM(require("papaparse"), 1);
+var import_warn_once2 = __toESM(require("warn-once"), 1);
+var { unparse } = import_papaparse.default;
 var useExport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,
@@ -5465,7 +5466,7 @@ See https://refine.dev/docs/api-reference/core/hooks/import-export/useExport/`
         ...unparseConfig
       };
     }
-    let csv = (0, import_papaparse.unparse)(rawData.map(mapData), unparseConfig);
+    let csv = unparse(rawData.map(mapData), unparseConfig);
     if (options.showTitle) {
       csv = `${options.title}\r
 
@@ -5494,9 +5495,9 @@ ${csv}`;
 }, "useExport");
 
 // src/hooks/form/useForm.ts
-var import_react41 = __toESM(require("react"));
-var import_warn_once3 = __toESM(require("warn-once"));
-var import_debounce = __toESM(require("lodash/debounce.js"));
+var import_react41 = __toESM(require("react"), 1);
+var import_warn_once3 = __toESM(require("warn-once"), 1);
+var import_debounce = __toESM(require("lodash/debounce.js"), 1);
 var useForm = /* @__PURE__ */ __name(({
   resource: resourceFromProps,
   action: actionFromProps,
@@ -5830,10 +5831,10 @@ var useRedirectionAfterSubmission = /* @__PURE__ */ __name(() => {
 }, "useRedirectionAfterSubmission");
 
 // src/hooks/router/use-go/index.tsx
-var import_react44 = __toESM(require("react"));
+var import_react44 = __toESM(require("react"), 1);
 
 // src/hooks/router/use-get-to-path/index.ts
-var import_react43 = __toESM(require("react"));
+var import_react43 = __toESM(require("react"), 1);
 var useGetToPath = /* @__PURE__ */ __name(() => {
   const routerType = useRouterType();
   const { resource: resourceFromRoute, resources } = useResource();
@@ -5921,7 +5922,7 @@ var handleResourceErrors = /* @__PURE__ */ __name((to, resource) => {
 }, "handleResourceErrors");
 
 // src/hooks/router/use-back/index.tsx
-var import_react45 = __toESM(require("react"));
+var import_react45 = __toESM(require("react"), 1);
 var useBack = /* @__PURE__ */ __name(() => {
   const bindings = (0, import_react45.useContext)(RouterBindingsContext);
   const useBack2 = import_react45.default.useMemo(
@@ -6183,8 +6184,8 @@ var useNavigation = /* @__PURE__ */ __name(() => {
 }, "useNavigation");
 
 // src/hooks/show/useShow.ts
-var import_react46 = __toESM(require("react"));
-var import_warn_once4 = __toESM(require("warn-once"));
+var import_react46 = __toESM(require("react"), 1);
+var import_warn_once4 = __toESM(require("warn-once"), 1);
 var useShow = /* @__PURE__ */ __name(({
   resource: resourceFromProp,
   id,
@@ -6259,8 +6260,9 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
 // src/hooks/import/index.tsx
 var import_react47 = require("react");
-var import_papaparse2 = require("papaparse");
-var import_chunk = __toESM(require("lodash/chunk.js"));
+var import_papaparse2 = __toESM(require("papaparse"), 1);
+var import_chunk = __toESM(require("lodash/chunk.js"), 1);
+var { parse } = import_papaparse2.default;
 var useImport = /* @__PURE__ */ __name(({
   resourceName,
   resource: resourceFromProps,
@@ -6316,7 +6318,7 @@ var useImport = /* @__PURE__ */ __name(({
     handleCleanup();
     return new Promise((resolve) => {
       setIsLoading(true);
-      (0, import_papaparse2.parse)(file, {
+      parse(file, {
         complete: async ({ data }) => {
           const values = importCSVMapper(data, mapData);
           setTotalAmount(values.length);
@@ -6451,7 +6453,7 @@ var useToPath = /* @__PURE__ */ __name(({
 }, "useToPath");
 
 // src/hooks/router/use-link/index.tsx
-var import_react49 = __toESM(require("react"));
+var import_react49 = __toESM(require("react"), 1);
 var useLink = /* @__PURE__ */ __name(() => {
   const bindings = (0, import_react49.useContext)(RouterBindingsContext);
   if (bindings == null ? void 0 : bindings.Link) {
@@ -6465,7 +6467,7 @@ var useLink = /* @__PURE__ */ __name(() => {
 var import_react51 = require("react");
 
 // src/contexts/legacy-router/index.tsx
-var import_react50 = __toESM(require("react"));
+var import_react50 = __toESM(require("react"), 1);
 var defaultProvider = {
   useHistory: () => false,
   useLocation: () => false,
@@ -6519,7 +6521,7 @@ var import_react_query24 = require("@tanstack/react-query");
 var import_react53 = require("react");
 
 // src/contexts/accessControl/index.tsx
-var import_react52 = __toESM(require("react"));
+var import_react52 = __toESM(require("react"), 1);
 var AccessControlContext = import_react52.default.createContext({
   options: {
     buttons: { enableAccessControl: true, hideIfUnauthorized: false }
@@ -6617,7 +6619,7 @@ var useCan = /* @__PURE__ */ __name(({
 }, "useCan");
 
 // src/hooks/accessControl/useCanWithoutCache.ts
-var import_react54 = __toESM(require("react"));
+var import_react54 = __toESM(require("react"), 1);
 var useCanWithoutCache = /* @__PURE__ */ __name(() => {
   const { can: canFromContext } = import_react54.default.useContext(AccessControlContext);
   const can = import_react54.default.useMemo(() => {
@@ -6643,9 +6645,9 @@ var useCanWithoutCache = /* @__PURE__ */ __name(() => {
 
 // src/hooks/useSelect/index.ts
 var import_react55 = require("react");
-var import_uniqBy = __toESM(require("lodash/uniqBy.js"));
-var import_debounce2 = __toESM(require("lodash/debounce.js"));
-var import_get = __toESM(require("lodash/get.js"));
+var import_uniqBy = __toESM(require("lodash/uniqBy.js"), 1);
+var import_debounce2 = __toESM(require("lodash/debounce.js"), 1);
+var import_get = __toESM(require("lodash/get.js"), 1);
 var useSelect = /* @__PURE__ */ __name((props) => {
   const [search, setSearch] = (0, import_react55.useState)([]);
   const [options, setOptions] = (0, import_react55.useState)([]);
@@ -6810,11 +6812,11 @@ var useSelect = /* @__PURE__ */ __name((props) => {
 }, "useSelect");
 
 // src/hooks/useTable/index.ts
-var import_react56 = __toESM(require("react"));
-var import_qs4 = __toESM(require("qs"));
-var import_differenceWith2 = __toESM(require("lodash/differenceWith.js"));
-var import_isEqual3 = __toESM(require("lodash/isEqual.js"));
-var import_warn_once5 = __toESM(require("warn-once"));
+var import_react56 = __toESM(require("react"), 1);
+var import_qs4 = __toESM(require("qs"), 1);
+var import_differenceWith2 = __toESM(require("lodash/differenceWith.js"), 1);
+var import_isEqual3 = __toESM(require("lodash/isEqual.js"), 1);
+var import_warn_once5 = __toESM(require("warn-once"), 1);
 var defaultPermanentFilter = [];
 var defaultPermanentSorter = [];
 function useTable({
@@ -7083,7 +7085,7 @@ var import_react58 = require("react");
 var import_react_query25 = require("@tanstack/react-query");
 
 // src/contexts/auditLog/index.tsx
-var import_react57 = __toESM(require("react"));
+var import_react57 = __toESM(require("react"), 1);
 var AuditLogContext = import_react57.default.createContext({});
 var AuditLogContextProvider = /* @__PURE__ */ __name(({ create, get: get2, update, children }) => {
   return /* @__PURE__ */ import_react57.default.createElement(AuditLogContext.Provider, { value: { create, get: get2, update } }, children);
@@ -7202,7 +7204,7 @@ var useLogList = /* @__PURE__ */ __name(({
 
 // src/hooks/breadcrumb/index.ts
 var import_react60 = require("react");
-var import_warn_once6 = __toESM(require("warn-once"));
+var import_warn_once6 = __toESM(require("warn-once"), 1);
 var useBreadcrumb = /* @__PURE__ */ __name(({
   meta: metaFromProps = {}
 } = {}) => {
@@ -7283,7 +7285,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
 }, "useBreadcrumb");
 
 // src/hooks/menu/useMenu.tsx
-var import_react61 = __toESM(require("react"));
+var import_react61 = __toESM(require("react"), 1);
 
 // src/definitions/helpers/menu/create-resource-key.ts
 var createResourceKey = /* @__PURE__ */ __name((resource, resources, legacy = false) => {
@@ -7498,7 +7500,7 @@ var ErrorComponent = /* @__PURE__ */ __name(() => {
 }, "ErrorComponent");
 
 // src/components/pages/login/index.tsx
-var import_react63 = __toESM(require("react"));
+var import_react63 = __toESM(require("react"), 1);
 var LoginPage = /* @__PURE__ */ __name(() => {
   const [username, setUsername] = (0, import_react63.useState)("");
   const [password, setPassword] = (0, import_react63.useState)("");
@@ -7544,10 +7546,10 @@ var LoginPage = /* @__PURE__ */ __name(() => {
 }, "LoginPage");
 
 // src/components/pages/auth/index.tsx
-var import_react68 = __toESM(require("react"));
+var import_react68 = __toESM(require("react"), 1);
 
 // src/components/pages/auth/components/login/index.tsx
-var import_react64 = __toESM(require("react"));
+var import_react64 = __toESM(require("react"), 1);
 var LoginPage2 = /* @__PURE__ */ __name(({
   providers,
   registerLink,
@@ -7698,7 +7700,7 @@ var LoginPage2 = /* @__PURE__ */ __name(({
 }, "LoginPage");
 
 // src/components/pages/auth/components/register/index.tsx
-var import_react65 = __toESM(require("react"));
+var import_react65 = __toESM(require("react"), 1);
 var RegisterPage = /* @__PURE__ */ __name(({
   providers,
   loginLink,
@@ -7822,7 +7824,7 @@ var RegisterPage = /* @__PURE__ */ __name(({
 }, "RegisterPage");
 
 // src/components/pages/auth/components/forgotPassword/index.tsx
-var import_react66 = __toESM(require("react"));
+var import_react66 = __toESM(require("react"), 1);
 var ForgotPasswordPage = /* @__PURE__ */ __name(({
   loginLink,
   wrapperProps,
@@ -7896,7 +7898,7 @@ var ForgotPasswordPage = /* @__PURE__ */ __name(({
 }, "ForgotPasswordPage");
 
 // src/components/pages/auth/components/updatePassword/index.tsx
-var import_react67 = __toESM(require("react"));
+var import_react67 = __toESM(require("react"), 1);
 var UpdatePasswordPage = /* @__PURE__ */ __name(({
   wrapperProps,
   contentProps,
@@ -7993,16 +7995,16 @@ var AuthPage = /* @__PURE__ */ __name((props) => {
 }, "AuthPage");
 
 // src/components/pages/ready/index.tsx
-var import_react69 = __toESM(require("react"));
+var import_react69 = __toESM(require("react"), 1);
 var ReadyPage = /* @__PURE__ */ __name(() => {
   return /* @__PURE__ */ import_react69.default.createElement(import_react69.default.Fragment, null, /* @__PURE__ */ import_react69.default.createElement("h1", null, "Welcome on board"), /* @__PURE__ */ import_react69.default.createElement("p", null, "Your configuration is completed."), /* @__PURE__ */ import_react69.default.createElement("p", null, "Now you can get started by adding your resources to the", " ", /* @__PURE__ */ import_react69.default.createElement("code", null, "`resources`"), " property of ", /* @__PURE__ */ import_react69.default.createElement("code", null, "`<Refine>`")), /* @__PURE__ */ import_react69.default.createElement("div", { style: { display: "flex", gap: 8 } }, /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://refine.dev", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Documentation")), /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://refine.dev/examples", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Examples")), /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://discord.gg/refine", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Community"))));
 }, "ReadyPage");
 
 // src/components/pages/welcome/index.tsx
-var import_react72 = __toESM(require("react"));
+var import_react72 = __toESM(require("react"), 1);
 
 // src/components/pages/config-success/index.tsx
-var import_react70 = __toESM(require("react"));
+var import_react70 = __toESM(require("react"), 1);
 var cards = [
   {
     title: "Documentation",
@@ -8279,7 +8281,7 @@ var Card = /* @__PURE__ */ __name(({ card }) => {
 }, "Card");
 
 // src/components/pages/config-error/index.tsx
-var import_react71 = __toESM(require("react"));
+var import_react71 = __toESM(require("react"), 1);
 var ConfigErrorPage = /* @__PURE__ */ __name(() => {
   return /* @__PURE__ */ import_react71.default.createElement(
     "div",
@@ -8772,12 +8774,12 @@ var WelcomePage = /* @__PURE__ */ __name(() => {
 }, "WelcomePage");
 
 // src/components/containers/refine/index.tsx
-var import_react76 = __toESM(require("react"));
+var import_react76 = __toESM(require("react"), 1);
 var import_react_query27 = require("@tanstack/react-query");
 var import_devtools_internal25 = require("@refinedev/devtools-internal");
 
 // src/components/telemetry/index.tsx
-var import_react74 = __toESM(require("react"));
+var import_react74 = __toESM(require("react"), 1);
 
 // src/hooks/useTelemetryData/index.ts
 var import_react73 = require("react");
@@ -8883,7 +8885,7 @@ var checkRouterPropMisuse = /* @__PURE__ */ __name((value) => {
 }, "checkRouterPropMisuse");
 
 // src/hooks/router/use-router-misuse-warning/index.ts
-var import_react75 = __toESM(require("react"));
+var import_react75 = __toESM(require("react"), 1);
 var useRouterMisuseWarning = /* @__PURE__ */ __name((value) => {
   const warned = import_react75.default.useRef(false);
   import_react75.default.useEffect(() => {
@@ -9070,7 +9072,7 @@ var UndoableQueue = /* @__PURE__ */ __name(({ notification }) => {
 }, "UndoableQueue");
 
 // src/components/layoutWrapper/index.tsx
-var import_react78 = __toESM(require("react"));
+var import_react78 = __toESM(require("react"), 1);
 var LayoutWrapper = /* @__PURE__ */ __name(({
   children,
   Layout: LayoutFromProps,
@@ -9127,7 +9129,7 @@ var UnsavedPrompt = /* @__PURE__ */ __name(() => {
 }, "UnsavedPrompt");
 
 // src/components/authenticated/index.tsx
-var import_react79 = __toESM(require("react"));
+var import_react79 = __toESM(require("react"), 1);
 function Authenticated({
   redirectOnFail = true,
   appendCurrentPathToQuery = true,
@@ -9223,7 +9225,7 @@ var RouteChangeHandler = /* @__PURE__ */ __name(() => {
 }, "RouteChangeHandler");
 
 // src/components/canAccess/index.tsx
-var import_react81 = __toESM(require("react"));
+var import_react81 = __toESM(require("react"), 1);
 var CanAccess = /* @__PURE__ */ __name(({
   resource: resourceFromProp,
   action: actionFromProp,
@@ -9284,7 +9286,7 @@ var CanAccess = /* @__PURE__ */ __name(({
 }, "CanAccess");
 
 // src/components/gh-banner/index.tsx
-var import_react82 = __toESM(require("react"));
+var import_react82 = __toESM(require("react"), 1);
 
 // src/components/gh-banner/styles.ts
 var CSSRules = [
@@ -9631,7 +9633,7 @@ var GlowBig = /* @__PURE__ */ __name(({ style, ...props }) => /* @__PURE__ */ im
 ), "GlowBig");
 
 // src/components/autoSaveIndicator/index.tsx
-var import_react83 = __toESM(require("react"));
+var import_react83 = __toESM(require("react"), 1);
 var AutoSaveIndicator = /* @__PURE__ */ __name(({
   status,
   elements: {

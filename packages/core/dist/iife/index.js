@@ -32,17 +32,17 @@
   ));
 
   // src/components/pages/error/index.tsx
-  var import_react62 = __toESM(__require("react"));
+  var import_react62 = __toESM(__require("react"), 1);
 
   // src/hooks/auth/usePermissions/index.ts
   var import_react_query = __require("@tanstack/react-query");
   var import_devtools_internal = __require("@refinedev/devtools-internal");
 
   // src/definitions/table/index.ts
-  var import_qs = __toESM(__require("qs"));
-  var import_unionWith = __toESM(__require("lodash-es/unionWith.js"));
-  var import_differenceWith = __toESM(__require("lodash-es/differenceWith.js"));
-  var import_warn_once = __toESM(__require("warn-once"));
+  var import_qs = __toESM(__require("qs"), 1);
+  var import_unionWith = __toESM(__require("lodash-es/unionWith.js"), 1);
+  var import_differenceWith = __toESM(__require("lodash-es/differenceWith.js"), 1);
+  var import_warn_once = __toESM(__require("warn-once"), 1);
 
   // src/definitions/helpers/userFriendlySeconds/index.ts
   var userFriendlySecond = /* @__PURE__ */ __name((miliseconds) => {
@@ -50,8 +50,8 @@
   }, "userFriendlySecond");
 
   // src/definitions/helpers/importCSVMapper/index.ts
-  var import_zip = __toESM(__require("lodash-es/zip.js"));
-  var import_fromPairs = __toESM(__require("lodash-es/fromPairs.js"));
+  var import_zip = __toESM(__require("lodash-es/zip.js"), 1);
+  var import_fromPairs = __toESM(__require("lodash-es/fromPairs.js"), 1);
   var importCSVMapper = /* @__PURE__ */ __name((data, mapData = (item) => item) => {
     const [headers, ...body] = data;
     return body.map((entry) => (0, import_fromPairs.default)((0, import_zip.default)(headers, entry))).map(
@@ -60,7 +60,7 @@
   }, "importCSVMapper");
 
   // src/definitions/helpers/userFriendlyResourceName/index.ts
-  var import_pluralize = __toESM(__require("pluralize"));
+  var import_pluralize = __toESM(__require("pluralize"), 1);
   var userFriendlyResourceName = /* @__PURE__ */ __name((resource = "", type) => {
     const humanizeResource = humanizeString(resource);
     if (type === "singular") {
@@ -579,11 +579,11 @@
   }, "humanizeString");
 
   // src/contexts/refine/index.tsx
-  var import_react2 = __toESM(__require("react"));
-  var import_pluralize2 = __toESM(__require("pluralize"));
+  var import_react2 = __toESM(__require("react"), 1);
+  var import_pluralize2 = __toESM(__require("pluralize"), 1);
 
   // src/components/layoutWrapper/defaultLayout/index.tsx
-  var import_react = __toESM(__require("react"));
+  var import_react = __toESM(__require("react"), 1);
   var DefaultLayout = /* @__PURE__ */ __name(({ children }) => {
     return /* @__PURE__ */ import_react.default.createElement("div", null, children);
   }, "DefaultLayout");
@@ -879,7 +879,7 @@
   }, "composeRoute");
 
   // src/contexts/auth/index.tsx
-  var import_react3 = __toESM(__require("react"));
+  var import_react3 = __toESM(__require("react"), 1);
   var LegacyAuthContext = import_react3.default.createContext({});
   var LegacyAuthContextProvider = /* @__PURE__ */ __name(({ children, isProvided, ...authOperations }) => {
     const { replace } = useNavigation();
@@ -1151,7 +1151,7 @@
   var import_react7 = __require("react");
 
   // src/contexts/unsavedWarn/index.tsx
-  var import_react6 = __toESM(__require("react"));
+  var import_react6 = __toESM(__require("react"), 1);
   var UnsavedWarnContext = import_react6.default.createContext({});
   var UnsavedWarnContextProvider = /* @__PURE__ */ __name(({
     children
@@ -1629,10 +1629,10 @@
   }, "buildSuccessNotification");
 
   // src/hooks/auth/useLogin/index.ts
-  var import_react11 = __toESM(__require("react"));
+  var import_react11 = __toESM(__require("react"), 1);
   var import_react_query5 = __require("@tanstack/react-query");
   var import_devtools_internal4 = __require("@refinedev/devtools-internal");
-  var import_qs2 = __toESM(__require("qs"));
+  var import_qs2 = __toESM(__require("qs"), 1);
   function useLogin({
     v3LegacyAuthProviderCompatible,
     mutationOptions
@@ -1954,10 +1954,10 @@
   }, "buildSuccessNotification");
 
   // src/hooks/auth/useUpdatePassword/index.ts
-  var import_react12 = __toESM(__require("react"));
+  var import_react12 = __toESM(__require("react"), 1);
   var import_react_query8 = __require("@tanstack/react-query");
   var import_devtools_internal7 = __require("@refinedev/devtools-internal");
-  var import_qs3 = __toESM(__require("qs"));
+  var import_qs3 = __toESM(__require("qs"), 1);
   function useUpdatePassword({
     v3LegacyAuthProviderCompatible,
     mutationOptions
@@ -2671,8 +2671,8 @@
   var import_react_query14 = __require("@tanstack/react-query");
 
   // src/contexts/undoableQueue/undoableQueueContext.tsx
-  var import_react14 = __toESM(__require("react"));
-  var import_isEqual = __toESM(__require("lodash-es/isEqual.js"));
+  var import_react14 = __toESM(__require("react"), 1);
+  var import_isEqual = __toESM(__require("lodash-es/isEqual.js"), 1);
   var UndoableQueueContext = import_react14.default.createContext({
     notifications: [],
     notificationDispatch: () => false
@@ -4558,7 +4558,7 @@
   var import_react16 = __require("react");
 
   // src/contexts/data/index.tsx
-  var import_react15 = __toESM(__require("react"));
+  var import_react15 = __toESM(__require("react"), 1);
   var defaultDataProvider = /* @__PURE__ */ __name(() => {
     return {};
   }, "defaultDataProvider");
@@ -4778,7 +4778,7 @@
   }, "useInfiniteList");
 
   // src/contexts/live/index.tsx
-  var import_react17 = __toESM(__require("react"));
+  var import_react17 = __toESM(__require("react"), 1);
   var LiveContext = import_react17.default.createContext(void 0);
   var LiveContextProvider = /* @__PURE__ */ __name(({
     liveProvider,
@@ -4795,14 +4795,14 @@
   var import_react25 = __require("react");
 
   // src/contexts/resource/index.tsx
-  var import_react20 = __toESM(__require("react"));
+  var import_react20 = __toESM(__require("react"), 1);
 
   // src/hooks/deepMemo/index.tsx
   var import_react19 = __require("react");
 
   // src/hooks/memoized/index.tsx
   var import_react18 = __require("react");
-  var import_isEqual2 = __toESM(__require("lodash-es/isEqual.js"));
+  var import_isEqual2 = __toESM(__require("lodash-es/isEqual.js"), 1);
   var useMemoized = /* @__PURE__ */ __name((value) => {
     const ref = (0, import_react18.useRef)(value);
     if (!(0, import_isEqual2.default)(ref.current, value)) {
@@ -4830,7 +4830,7 @@
   }, "ResourceContextProvider");
 
   // src/contexts/router-picker/index.tsx
-  var import_react21 = __toESM(__require("react"));
+  var import_react21 = __toESM(__require("react"), 1);
   var RouterPickerContext = import_react21.default.createContext("new");
   var RouterPickerProvider = RouterPickerContext.Provider;
   var useRouterType = /* @__PURE__ */ __name(() => {
@@ -4839,10 +4839,10 @@
   }, "useRouterType");
 
   // src/hooks/router/use-parsed/index.tsx
-  var import_react24 = __toESM(__require("react"));
+  var import_react24 = __toESM(__require("react"), 1);
 
   // src/contexts/router/index.tsx
-  var import_react22 = __toESM(__require("react"));
+  var import_react22 = __toESM(__require("react"), 1);
   var defaultBindings = {};
   var RouterBindingsContext = (0, import_react22.createContext)(defaultBindings);
   var RouterBindingsProvider = /* @__PURE__ */ __name(({ children, router }) => {
@@ -4850,7 +4850,7 @@
   }, "RouterBindingsProvider");
 
   // src/hooks/router/use-parse/index.tsx
-  var import_react23 = __toESM(__require("react"));
+  var import_react23 = __toESM(__require("react"), 1);
   var useParse = /* @__PURE__ */ __name(() => {
     const bindings = (0, import_react23.useContext)(RouterBindingsContext);
     const useParse2 = import_react23.default.useMemo(
@@ -5154,7 +5154,7 @@
   var import_react34 = __require("react");
 
   // src/contexts/notification/index.tsx
-  var import_react33 = __toESM(__require("react"));
+  var import_react33 = __toESM(__require("react"), 1);
   var NotificationContext = (0, import_react33.createContext)({});
   var NotificationContextProvider = /* @__PURE__ */ __name(({ open, close, children }) => {
     return /* @__PURE__ */ import_react33.default.createElement(NotificationContext.Provider, { value: { open, close } }, children);
@@ -5189,7 +5189,7 @@
   var import_react37 = __require("react");
 
   // src/contexts/translation/index.tsx
-  var import_react36 = __toESM(__require("react"));
+  var import_react36 = __toESM(__require("react"), 1);
   var TranslationContext = import_react36.default.createContext({});
   var TranslationContextProvider = /* @__PURE__ */ __name(({ children, i18nProvider }) => {
     return /* @__PURE__ */ import_react36.default.createElement(
@@ -5232,8 +5232,9 @@
 
   // src/hooks/export/index.ts
   var import_react40 = __require("react");
-  var import_papaparse = __require("papaparse");
-  var import_warn_once2 = __toESM(__require("warn-once"));
+  var import_papaparse = __toESM(__require("papaparse"), 1);
+  var import_warn_once2 = __toESM(__require("warn-once"), 1);
+  var { unparse } = import_papaparse.default;
   var useExport = /* @__PURE__ */ __name(({
     resourceName,
     resource: resourceFromProps,
@@ -5347,7 +5348,7 @@ See https://refine.dev/docs/api-reference/core/hooks/import-export/useExport/`
           ...unparseConfig
         };
       }
-      let csv = (0, import_papaparse.unparse)(rawData.map(mapData), unparseConfig);
+      let csv = unparse(rawData.map(mapData), unparseConfig);
       if (options.showTitle) {
         csv = `${options.title}\r
 
@@ -5376,9 +5377,9 @@ ${csv}`;
   }, "useExport");
 
   // src/hooks/form/useForm.ts
-  var import_react41 = __toESM(__require("react"));
-  var import_warn_once3 = __toESM(__require("warn-once"));
-  var import_debounce = __toESM(__require("lodash-es/debounce.js"));
+  var import_react41 = __toESM(__require("react"), 1);
+  var import_warn_once3 = __toESM(__require("warn-once"), 1);
+  var import_debounce = __toESM(__require("lodash-es/debounce.js"), 1);
   var useForm = /* @__PURE__ */ __name(({
     resource: resourceFromProps,
     action: actionFromProps,
@@ -5712,10 +5713,10 @@ See https://refine.dev/docs/api-reference/core/hooks/useForm/#resource`
   }, "useRedirectionAfterSubmission");
 
   // src/hooks/router/use-go/index.tsx
-  var import_react44 = __toESM(__require("react"));
+  var import_react44 = __toESM(__require("react"), 1);
 
   // src/hooks/router/use-get-to-path/index.ts
-  var import_react43 = __toESM(__require("react"));
+  var import_react43 = __toESM(__require("react"), 1);
   var useGetToPath = /* @__PURE__ */ __name(() => {
     const routerType = useRouterType();
     const { resource: resourceFromRoute, resources } = useResource();
@@ -5803,7 +5804,7 @@ See https://refine.dev/docs/api-reference/core/hooks/useForm/#resource`
   }, "handleResourceErrors");
 
   // src/hooks/router/use-back/index.tsx
-  var import_react45 = __toESM(__require("react"));
+  var import_react45 = __toESM(__require("react"), 1);
   var useBack = /* @__PURE__ */ __name(() => {
     const bindings = (0, import_react45.useContext)(RouterBindingsContext);
     const useBack2 = import_react45.default.useMemo(
@@ -6065,8 +6066,8 @@ See https://refine.dev/docs/api-reference/core/hooks/useForm/#resource`
   }, "useNavigation");
 
   // src/hooks/show/useShow.ts
-  var import_react46 = __toESM(__require("react"));
-  var import_warn_once4 = __toESM(__require("warn-once"));
+  var import_react46 = __toESM(__require("react"), 1);
+  var import_warn_once4 = __toESM(__require("warn-once"), 1);
   var useShow = /* @__PURE__ */ __name(({
     resource: resourceFromProp,
     id,
@@ -6141,8 +6142,9 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
   // src/hooks/import/index.tsx
   var import_react47 = __require("react");
-  var import_papaparse2 = __require("papaparse");
-  var import_chunk = __toESM(__require("lodash-es/chunk.js"));
+  var import_papaparse2 = __toESM(__require("papaparse"), 1);
+  var import_chunk = __toESM(__require("lodash-es/chunk.js"), 1);
+  var { parse } = import_papaparse2.default;
   var useImport = /* @__PURE__ */ __name(({
     resourceName,
     resource: resourceFromProps,
@@ -6198,7 +6200,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
       handleCleanup();
       return new Promise((resolve) => {
         setIsLoading(true);
-        (0, import_papaparse2.parse)(file, {
+        parse(file, {
           complete: async ({ data }) => {
             const values = importCSVMapper(data, mapData);
             setTotalAmount(values.length);
@@ -6333,7 +6335,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   }, "useToPath");
 
   // src/hooks/router/use-link/index.tsx
-  var import_react49 = __toESM(__require("react"));
+  var import_react49 = __toESM(__require("react"), 1);
   var useLink = /* @__PURE__ */ __name(() => {
     const bindings = (0, import_react49.useContext)(RouterBindingsContext);
     if (bindings == null ? void 0 : bindings.Link) {
@@ -6347,7 +6349,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   var import_react51 = __require("react");
 
   // src/contexts/legacy-router/index.tsx
-  var import_react50 = __toESM(__require("react"));
+  var import_react50 = __toESM(__require("react"), 1);
   var defaultProvider = {
     useHistory: () => false,
     useLocation: () => false,
@@ -6401,7 +6403,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   var import_react53 = __require("react");
 
   // src/contexts/accessControl/index.tsx
-  var import_react52 = __toESM(__require("react"));
+  var import_react52 = __toESM(__require("react"), 1);
   var AccessControlContext = import_react52.default.createContext({
     options: {
       buttons: { enableAccessControl: true, hideIfUnauthorized: false }
@@ -6499,7 +6501,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   }, "useCan");
 
   // src/hooks/accessControl/useCanWithoutCache.ts
-  var import_react54 = __toESM(__require("react"));
+  var import_react54 = __toESM(__require("react"), 1);
   var useCanWithoutCache = /* @__PURE__ */ __name(() => {
     const { can: canFromContext } = import_react54.default.useContext(AccessControlContext);
     const can = import_react54.default.useMemo(() => {
@@ -6525,9 +6527,9 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
   // src/hooks/useSelect/index.ts
   var import_react55 = __require("react");
-  var import_uniqBy = __toESM(__require("lodash-es/uniqBy.js"));
-  var import_debounce2 = __toESM(__require("lodash-es/debounce.js"));
-  var import_get = __toESM(__require("lodash-es/get.js"));
+  var import_uniqBy = __toESM(__require("lodash-es/uniqBy.js"), 1);
+  var import_debounce2 = __toESM(__require("lodash-es/debounce.js"), 1);
+  var import_get = __toESM(__require("lodash-es/get.js"), 1);
   var useSelect = /* @__PURE__ */ __name((props) => {
     const [search, setSearch] = (0, import_react55.useState)([]);
     const [options, setOptions] = (0, import_react55.useState)([]);
@@ -6692,11 +6694,11 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   }, "useSelect");
 
   // src/hooks/useTable/index.ts
-  var import_react56 = __toESM(__require("react"));
-  var import_qs4 = __toESM(__require("qs"));
-  var import_differenceWith2 = __toESM(__require("lodash-es/differenceWith.js"));
-  var import_isEqual3 = __toESM(__require("lodash-es/isEqual.js"));
-  var import_warn_once5 = __toESM(__require("warn-once"));
+  var import_react56 = __toESM(__require("react"), 1);
+  var import_qs4 = __toESM(__require("qs"), 1);
+  var import_differenceWith2 = __toESM(__require("lodash-es/differenceWith.js"), 1);
+  var import_isEqual3 = __toESM(__require("lodash-es/isEqual.js"), 1);
+  var import_warn_once5 = __toESM(__require("warn-once"), 1);
   var defaultPermanentFilter = [];
   var defaultPermanentSorter = [];
   function useTable({
@@ -6965,7 +6967,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
   var import_react_query25 = __require("@tanstack/react-query");
 
   // src/contexts/auditLog/index.tsx
-  var import_react57 = __toESM(__require("react"));
+  var import_react57 = __toESM(__require("react"), 1);
   var AuditLogContext = import_react57.default.createContext({});
   var AuditLogContextProvider = /* @__PURE__ */ __name(({ create, get: get2, update, children }) => {
     return /* @__PURE__ */ import_react57.default.createElement(AuditLogContext.Provider, { value: { create, get: get2, update } }, children);
@@ -7084,7 +7086,7 @@ See https://refine.dev/docs/api-reference/core/hooks/show/useShow/#resource`
 
   // src/hooks/breadcrumb/index.ts
   var import_react60 = __require("react");
-  var import_warn_once6 = __toESM(__require("warn-once"));
+  var import_warn_once6 = __toESM(__require("warn-once"), 1);
   var useBreadcrumb = /* @__PURE__ */ __name(({
     meta: metaFromProps = {}
   } = {}) => {
@@ -7165,7 +7167,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "useBreadcrumb");
 
   // src/hooks/menu/useMenu.tsx
-  var import_react61 = __toESM(__require("react"));
+  var import_react61 = __toESM(__require("react"), 1);
 
   // src/definitions/helpers/menu/create-resource-key.ts
   var createResourceKey = /* @__PURE__ */ __name((resource, resources, legacy = false) => {
@@ -7380,7 +7382,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "ErrorComponent");
 
   // src/components/pages/login/index.tsx
-  var import_react63 = __toESM(__require("react"));
+  var import_react63 = __toESM(__require("react"), 1);
   var LoginPage = /* @__PURE__ */ __name(() => {
     const [username, setUsername] = (0, import_react63.useState)("");
     const [password, setPassword] = (0, import_react63.useState)("");
@@ -7426,10 +7428,10 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "LoginPage");
 
   // src/components/pages/auth/index.tsx
-  var import_react68 = __toESM(__require("react"));
+  var import_react68 = __toESM(__require("react"), 1);
 
   // src/components/pages/auth/components/login/index.tsx
-  var import_react64 = __toESM(__require("react"));
+  var import_react64 = __toESM(__require("react"), 1);
   var LoginPage2 = /* @__PURE__ */ __name(({
     providers,
     registerLink,
@@ -7580,7 +7582,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "LoginPage");
 
   // src/components/pages/auth/components/register/index.tsx
-  var import_react65 = __toESM(__require("react"));
+  var import_react65 = __toESM(__require("react"), 1);
   var RegisterPage = /* @__PURE__ */ __name(({
     providers,
     loginLink,
@@ -7704,7 +7706,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "RegisterPage");
 
   // src/components/pages/auth/components/forgotPassword/index.tsx
-  var import_react66 = __toESM(__require("react"));
+  var import_react66 = __toESM(__require("react"), 1);
   var ForgotPasswordPage = /* @__PURE__ */ __name(({
     loginLink,
     wrapperProps,
@@ -7778,7 +7780,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "ForgotPasswordPage");
 
   // src/components/pages/auth/components/updatePassword/index.tsx
-  var import_react67 = __toESM(__require("react"));
+  var import_react67 = __toESM(__require("react"), 1);
   var UpdatePasswordPage = /* @__PURE__ */ __name(({
     wrapperProps,
     contentProps,
@@ -7875,16 +7877,16 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "AuthPage");
 
   // src/components/pages/ready/index.tsx
-  var import_react69 = __toESM(__require("react"));
+  var import_react69 = __toESM(__require("react"), 1);
   var ReadyPage = /* @__PURE__ */ __name(() => {
     return /* @__PURE__ */ import_react69.default.createElement(import_react69.default.Fragment, null, /* @__PURE__ */ import_react69.default.createElement("h1", null, "Welcome on board"), /* @__PURE__ */ import_react69.default.createElement("p", null, "Your configuration is completed."), /* @__PURE__ */ import_react69.default.createElement("p", null, "Now you can get started by adding your resources to the", " ", /* @__PURE__ */ import_react69.default.createElement("code", null, "`resources`"), " property of ", /* @__PURE__ */ import_react69.default.createElement("code", null, "`<Refine>`")), /* @__PURE__ */ import_react69.default.createElement("div", { style: { display: "flex", gap: 8 } }, /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://refine.dev", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Documentation")), /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://refine.dev/examples", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Examples")), /* @__PURE__ */ import_react69.default.createElement("a", { href: "https://discord.gg/refine", target: "_blank", rel: "noreferrer" }, /* @__PURE__ */ import_react69.default.createElement("button", null, "Community"))));
   }, "ReadyPage");
 
   // src/components/pages/welcome/index.tsx
-  var import_react72 = __toESM(__require("react"));
+  var import_react72 = __toESM(__require("react"), 1);
 
   // src/components/pages/config-success/index.tsx
-  var import_react70 = __toESM(__require("react"));
+  var import_react70 = __toESM(__require("react"), 1);
   var cards = [
     {
       title: "Documentation",
@@ -8161,7 +8163,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "Card");
 
   // src/components/pages/config-error/index.tsx
-  var import_react71 = __toESM(__require("react"));
+  var import_react71 = __toESM(__require("react"), 1);
   var ConfigErrorPage = /* @__PURE__ */ __name(() => {
     return /* @__PURE__ */ import_react71.default.createElement(
       "div",
@@ -8654,12 +8656,12 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "WelcomePage");
 
   // src/components/containers/refine/index.tsx
-  var import_react76 = __toESM(__require("react"));
+  var import_react76 = __toESM(__require("react"), 1);
   var import_react_query27 = __require("@tanstack/react-query");
   var import_devtools_internal25 = __require("@refinedev/devtools-internal");
 
   // src/components/telemetry/index.tsx
-  var import_react74 = __toESM(__require("react"));
+  var import_react74 = __toESM(__require("react"), 1);
 
   // src/hooks/useTelemetryData/index.ts
   var import_react73 = __require("react");
@@ -8765,7 +8767,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "checkRouterPropMisuse");
 
   // src/hooks/router/use-router-misuse-warning/index.ts
-  var import_react75 = __toESM(__require("react"));
+  var import_react75 = __toESM(__require("react"), 1);
   var useRouterMisuseWarning = /* @__PURE__ */ __name((value) => {
     const warned = import_react75.default.useRef(false);
     import_react75.default.useEffect(() => {
@@ -8952,7 +8954,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "UndoableQueue");
 
   // src/components/layoutWrapper/index.tsx
-  var import_react78 = __toESM(__require("react"));
+  var import_react78 = __toESM(__require("react"), 1);
   var LayoutWrapper = /* @__PURE__ */ __name(({
     children,
     Layout: LayoutFromProps,
@@ -9009,7 +9011,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "UnsavedPrompt");
 
   // src/components/authenticated/index.tsx
-  var import_react79 = __toESM(__require("react"));
+  var import_react79 = __toESM(__require("react"), 1);
   function Authenticated({
     redirectOnFail = true,
     appendCurrentPathToQuery = true,
@@ -9105,7 +9107,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "RouteChangeHandler");
 
   // src/components/canAccess/index.tsx
-  var import_react81 = __toESM(__require("react"));
+  var import_react81 = __toESM(__require("react"), 1);
   var CanAccess = /* @__PURE__ */ __name(({
     resource: resourceFromProp,
     action: actionFromProp,
@@ -9166,7 +9168,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   }, "CanAccess");
 
   // src/components/gh-banner/index.tsx
-  var import_react82 = __toESM(__require("react"));
+  var import_react82 = __toESM(__require("react"), 1);
 
   // src/components/gh-banner/styles.ts
   var CSSRules = [
@@ -9513,7 +9515,7 @@ For more information, see https://refine.dev/docs/api-reference/core/hooks/useBr
   ), "GlowBig");
 
   // src/components/autoSaveIndicator/index.tsx
-  var import_react83 = __toESM(__require("react"));
+  var import_react83 = __toESM(__require("react"), 1);
   var AutoSaveIndicator = /* @__PURE__ */ __name(({
     status,
     elements: {

@@ -1,4 +1,4 @@
-import { ParseConfig } from "papaparse";
+import type { ParseConfig } from "papaparse";
 import { MapDataFn, BaseRecord, HttpError, MetaQuery } from "../../interfaces";
 import { UseCreateReturnType } from "../../hooks/data/useCreate";
 import { UseCreateManyReturnType } from "../../hooks/data/useCreateMany";
