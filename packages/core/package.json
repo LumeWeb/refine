@@ -16,7 +16,7 @@
   "typings": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/esm/index.mjs",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
   },
