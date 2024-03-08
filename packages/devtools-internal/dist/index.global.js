@@ -250,4 +250,4 @@
     return {};
   };
 })();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.global.js.map
