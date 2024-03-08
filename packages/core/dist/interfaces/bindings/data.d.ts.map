@@ -1,0 +1,1 @@
+{"version":3,"file":"data.d.ts","sourceRoot":"","sources":["../../../src/interfaces/bindings/data.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,OAAO,EAAE,YAAY,EAAE,MAAM,6BAA6B,CAAC;AAE3D,MAAM,MAAM,iBAAiB,GAAG,YAAY,CAAC;AAE7C,MAAM,MAAM,mBAAmB,GAAG;IAChC,OAAO,EAAE,YAAY,CAAC;IACtB,CAAC,GAAG,EAAE,MAAM,GAAG,YAAY,CAAC;CAC7B,CAAC;AAEF,MAAM,MAAM,YAAY,GAAG,iBAAiB,GAAG,mBAAmB,CAAC"}
