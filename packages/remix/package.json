@@ -41,8 +41,8 @@
     "src"
   ],
   "scripts": {
-    "build": "tsup --format esm,cjs,iife  --legacy-output",
-    "dev": "tsup --watch --format esm,cjs,iife --legacy-output",
+    "build": "tsup --format esm,cjs,iife",
+    "dev": "tsup --watch --format esm,cjs,iife",
     "prepare": "npm run build",
     "test": "jest --passWithNoTests --runInBand"
   },
