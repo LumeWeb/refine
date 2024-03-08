@@ -156,4 +156,4 @@ export {
   scopes,
   send
 };
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.mjs.map

@@ -86,7 +86,7 @@
   );
 
   // src/context.tsx
-  var import_react = __toESM(__require("react"), 1);
+  var import_react = __toESM(__require("react"));
 
   // src/send.ts
   async function send(ws, event, payload) {
@@ -178,4 +178,4 @@
     return /* @__PURE__ */ import_react.default.createElement(DevToolsContext.Provider, { value: contextValues }, children);
   };
 })();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.global.js.map

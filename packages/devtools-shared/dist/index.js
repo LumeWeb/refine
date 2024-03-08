@@ -96,7 +96,7 @@ var hooksByScope = Object.entries(scopes).reduce(
 );
 
 // src/context.tsx
-var import_react = __toESM(require("react"), 1);
+var import_react = __toESM(require("react"));
 
 // src/send.ts
 async function send(ws, event, payload) {
