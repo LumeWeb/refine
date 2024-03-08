@@ -1,0 +1,4 @@
+import React from "react";
+import type { PromptProps } from "@refinedev/core";
+export declare const Prompt: React.FC<PromptProps>;
+//# sourceMappingURL=prompt.d.ts.map

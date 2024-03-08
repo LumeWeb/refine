@@ -1,0 +1,1 @@
+{"version":3,"file":"refine-routes.d.ts","sourceRoot":"","sources":["../src/refine-routes.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAI1B,KAAK,iBAAiB,GAAG;IACvB,QAAQ,CAAC,EAAE,CACT,aAAa,EAAE,GAAG,CAAC,OAAO,GAAG,SAAS,EACtC,QAAQ,EAAE,MAAM,GAAG,SAAS,KACzB,GAAG,CAAC,OAAO,CAAC;CAClB,CAAC;AAEF,eAAO,MAAM,YAAY,iBAAkB,iBAAiB,sBAyB3D,CAAC"}
