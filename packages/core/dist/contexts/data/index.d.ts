@@ -1,8 +1,0 @@
-import React from "react";
-import { IDataContextProvider, IDataMultipleContextProvider } from "../../interfaces";
-export declare const defaultDataProvider: () => {};
-export declare const DataContext: React.Context<Partial<IDataMultipleContextProvider>>;
-type Props = React.PropsWithChildren<Partial<IDataMultipleContextProvider> | IDataContextProvider>;
-export declare const DataContextProvider: React.FC<Props>;
-export {};
-//# sourceMappingURL=index.d.ts.map
