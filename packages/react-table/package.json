@@ -14,13 +14,20 @@
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "build": "tsup --format esm,cjs,iife --minify --legacy-output",
-    "dev": "tsup --watch --format esm,cjs,iife --legacy-output",
+    "build": "tsup --format esm,cjs,iife --minify",
+    "dev": "tsup --watch --format esm,cjs,iife",
     "prepare": "npm run build",
     "test": "jest --passWithNoTests --runInBand"
   },
