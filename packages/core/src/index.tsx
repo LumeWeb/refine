@@ -60,6 +60,7 @@ export {
   ILogData,
   LogParams,
 } from "./contexts/auditLog/types.js";
+export { AuditLogContext } from "./contexts/auditLog/index.js";
 
 export {
   AuthActionResponse,
@@ -74,6 +75,10 @@ export {
   PermissionResponse,
   SuccessNotificationResponse,
 } from "./contexts/auth/types.js";
+export {
+  AuthBindingsContext,
+  LegacyAuthContext,
+} from "./contexts/auth/index.js";
 
 export {
   ConditionalFilter,
@@ -132,6 +137,7 @@ export {
   ValidationErrors,
   VariableOptions,
 } from "./contexts/data/types.js";
+export { DataContext } from "./contexts/data/index.js";
 
 export {
   I18nContext,
@@ -156,6 +162,7 @@ export {
   LiveProvider,
   LiveListParams,
 } from "./contexts/live/types.js";
+export { LiveContext } from "./contexts/live/index.js";
 
 export {
   INotificationContext,
@@ -164,6 +171,7 @@ export {
   OpenNotificationParams,
   SuccessErrorNotification,
 } from "./contexts/notification/types.js";
+export { NotificationContext } from "./contexts/notification/index.js";
 
 export {
   DashboardPageProps,
@@ -176,6 +184,7 @@ export {
   TextTransformers,
   TitleProps,
 } from "./contexts/refine/types.js";
+export { RefineContext } from "./contexts/refine/index.js";
 
 export {
   ResourceProps,
@@ -204,6 +213,7 @@ export {
   ResourceRouterParams,
   RouteAction,
 } from "./contexts/router/legacy/types.js";
+export { LegacyRouterContext } from "./contexts/router/legacy/index.js";
 
 export {
   Action,
@@ -216,6 +226,7 @@ export {
   RouterProvider,
   RouterProvider as RouterBindings,
 } from "./contexts/router/types.js";
+export { RouterContext } from "./contexts/router/index.js";
 
 export {
   ActionTypes,
@@ -224,8 +235,10 @@ export {
 } from "./contexts/undoableQueue/types.js";
 
 export { IUnsavedWarnContext } from "./contexts/unsavedWarn/types.js";
+export { UndoableQueueContext } from "./contexts/undoableQueue/index.js";
 
 export {
   MetaContextProvider,
   useMetaContext,
+  MetaContext,
 } from "./contexts/metaContext/index.js";
